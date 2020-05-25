@@ -1,0 +1,85 @@
+.contact-form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  @include sp {
+    flex-direction: column;
+  }
+}
+
+.contact-btn {
+  padding: .25em 3em;
+  position: absolute;
+  bottom: -20%;
+  @include sp {
+    bottom: -10%;
+    right: 11%;
+  }
+}
+
+.required-item {
+  margin-right: 10vw;
+  @include sp {
+    margin-right: 0;
+  }
+}
+
+.required {
+  background-color: rgb(255, 100, 100);
+  color: #fff;
+  padding: .3em .5em .2em .5em;
+  border-radius: 5em;
+  font-size: 1.5rem;
+}
+
+label {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: $font-main;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 350px;
+  height: 5vh;
+  font-size: 1.5rem;
+  font-family: $font-main;
+  letter-spacing: 1.5px;
+  padding: .2em 0 .2em .5em;
+  display: block;
+  margin-bottom: 45px;
+  border-style: solid;
+  border-color: rgb(233,233,233);
+  border-width: 1px;
+  @include sp {
+    width: 100%;
+  }
+}
+
+textarea {
+  width: 500px;
+  height: 20vh;
+  font-size: 1.5rem;
+  font-family: $font-main;
+  letter-spacing: 1.5px;
+  padding: .2em 0 .2em .5em;
+  display: block;
+  margin-bottom: 100px;
+  border-color: rgb(233, 233, 233);
+  border-width: 1px;
+  @include sp {
+    width: 100%;
+  }
+}
+
+::placeholder {
+  color: rgb(176, 176, 176);
+}
+
+#thxMessage {
+  display: none;
+  text-align: center;
+  font-size: 2rem;
+  color: $color-text-black;
+}

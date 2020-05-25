@@ -1,0 +1,42 @@
+// レスポンシブ
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+@mixin pc2 {
+    @media screen and (max-width: 1380px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin tab2 {
+    @media screen and (max-width: 890px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: 375px) {
+        @content;
+    }
+}
+@mixin sp2 {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+
+// brのsp表示
+.sp-mode {
+    display: block;
+    @include sp {
+        display: none;
+    }
+}

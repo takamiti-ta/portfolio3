@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kanno Takamichi | Portfolio</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+
+<!-- drawer-menu -->
+<div id="drawer" class="drawer-icon">
+    <i class="fas fa-bars"></i>
+</div>
+<nav id="drawer-nav" class="drawer-nav">
+    <ul id="drawer-nav-list" class="drawer-nav-list">
+        <li><a href="#about" class="drawer-nav-list-item js-smooth-scroll">About</a></li>
+        <li><a href="#portfolio" class="drawer-nav-list-item js-smooth-scroll">Portfolio</a></li>
+        <li><a href="#contact" class="drawer-nav-list-item js-smooth-scroll">Contact</a></li>
+    </ul>
+</nav>
+
+<body>
+    <!-- header -->
+    <header id="header" class="header">
+        <nav class="global-nav" id="js-global-nav">
+            <ul class="global-nav__list">
+                <li><a href="#about" class="js-smooth-scroll">About</a></li>
+                <li><a href="#portfolio" class="js-smooth-scroll">Portfolio</a></li>
+                <li><a href="#contact" class="js-smooth-scroll">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-bg-color">
+        <!-- Top-view -->
+        <section class="top-view">
+            <div class="top-view-img">
+                <img style="position: absolute;" id="idshow1" class="fadeout" src="images/top-view1.jpg"
+                    alt="top-viewの写真1">
+                <img id="idshow2" class="fadein" src="images/top-view2.jpg" alt="top-viewの写真2">
+            </div>
+            <h1 class="top-view-item">Kanno Takamichi<br>My Portfolio</h1>
+            <div class="top-view-svg">
+                <a href="#about"><span></span></a>
+            </div>
+        </section>
+
+        <section id="js-trigger"></section> <!-- ここまでスクロールされたらヘッダーを表示 -->
+        <!-- About -->
+        <section class="about inner anchor" id="about">
+            <div class="about-inner">
+                <div class="about-inner-img">
+                    <h2 class="section-title">About</h2>
+                    <div class="about-img">
+                        <img src="/images/about-img.png" alt="プロフィール写真">
+                    </div>
+                </div>
+                <div class="about-inner-profile">
+                    <h4 class="section-title-sub">自己紹介</h4>
+                    <ul class="about-profile">
+                        <li class="about-profile-name"><strong class="marker">名前:</strong> 菅野 貴道 (24歳)</li>
+                        <li class="about-profile-from"><strong class="marker">出身地:</strong> 埼玉県</li>
+                        <li class="about-profile-school"><strong class="marker">学歴:</strong> 2016年3月 服部栄養専門学校卒業</li>
+                        <li class="about-profile-work"><strong class="marker">職歴:</strong>
+                            専門学校卒業後、都内のレストランに就職<br class="sp-mode">約1年半勤務した後退職、その後フリーターとして生活</li>
+                        <li class="about-profile-hobby"><strong class="marker">趣味:</strong>
+                            現在はカメラで写真を撮影すること<br class="sp-mode">ポートフォリオの写真は自分で撮影した写真です。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 背景画像スクロール -->
+        <div class="fixed-bg bg01">
+        </div>
+
+        <!-- modal -->
+        <div class="modal" data-modal="modal-1">
+            <div class="modal-cover"></div>
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <img src="/images/portfolio1.png" alt="ポートフォリオ1">
+                    <button type="button" class="btn portfolio-modal-btn btn-close">閉じる</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" data-modal="modal-2">
+            <div class="modal-cover"></div>
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <img src="/images/portfolio2.png" alt="ポートフォリオ2">
+                    <button type="button" class="btn portfolio-modal-btn btn-close">閉じる</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" data-modal="modal-3">
+            <div class="modal-cover"></div>
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <img src="/images/portfolio3.png" alt="ポートフォリオ3">
+                    <button type="button" class="btn portfolio-modal-btn btn-close">閉じる</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" data-modal="modal-4">
+            <div class="modal-cover"></div>
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <img src="/images/myblog.png" alt="旅のブログ">
+                    <button type="button" class="btn portfolio-modal-btn btn-close">閉じる</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" data-modal="modal-5">
+            <div class="modal-cover"></div>
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <img src="/images/coding.png" alt="模写コーディング">
+                    <button type="button" class="btn portfolio-modal-btn btn-close">閉じる</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <section class="portfolio inner anchor" id="portfolio">
+            <div class="title-text-side">
+                <h2 class="section-title">Portfolio</h2>
+                <h4 class="section-title-sub">画像クリックで拡大します</h4>
+            </div>
+            <div class="portfolio-inner">
+                <div class="portfolio-inner-item modal-open" data-modal-open="modal-1">
+                    <div class="portfolio-img">
+                        <img src="/images/portfolio1.png" alt="ポートフォリオ1">
+                        <div class="portfolio-img-click">
+                            <i class="fas fa-plus-square portfolio-img-click"></i>
+                        </div>
+                    </div>
+                    <ul class="portfolio-item-text">
+                        <li class="portfolio-item-text-title"><strong class="marker">タイトル:</strong> ポートフォリオ1</li>
+                        <li class="portfolio-item-text-time"><strong class="marker">使用言語:</strong> HTML, CSS, jQuery
+                        </li>
+                        <li class="portfolio-item-text-explanation"><strong class="marker">説明:</strong>
+                            初めて作ったポートフォリオです。色々な人たちのポートフォリオを参考にしながら自分なりに作成しました。試行錯誤しながらもなんとか形にできました。</li>
+                    </ul>
+                </div>
+                <div class="portfolio-inner-item modal-open" data-modal-open="modal-2">
+                    <div class="portfolio-img">
+                        <img src="/images/portfolio2.png" alt="ポートフォリオ2">
+                        <div class="portfolio-img-click">
+                            <i class="fas fa-plus-square portfolio-img-click"></i>
+                        </div>
+                    </div>
+                    <ul class="portfolio-item-text">
+                        <li class="portfolio-item-text-title"><strong class="marker">タイトル:</strong> ポートフォリオ2</li>
+                        <li class="portfolio-item-text-time"><strong class="marker">使用言語:</strong> HTML, CSS, jQuery,
+                            BootStrap</li>
+                        <li class="portfolio-item-text-explanation"><strong class="marker">説明:</strong>
+                            HTMLテンプレートを使用して作成しました。約100種類テンプレートがあったので他のテンプレートからパーツを持ってきたりと自分なりにアレンジしました。</li>
+                    </ul>
+                </div>
+                <div class="portfolio-inner-item modal-open" data-modal-open="modal-3">
+                    <div class="portfolio-img">
+                        <img src="/images/portfolio3.png" alt="ポートフォリオ3">
+                        <div class="portfolio-img-click">
+                            <i class="fas fa-plus-square portfolio-img-click"></i>
+                        </div>
+                    </div>
+                    <ul class="portfolio-item-text">
+                        <li class="portfolio-item-text-title"><strong class="marker">タイトル:</strong> ポートフォリオ3（当サイト）</li>
+                        <li class="portfolio-item-text-time"><strong class="marker">使用言語:</strong> HTML, CSS,
+                            JavaScript</li>
+                        <li class="portfolio-item-text-explanation"><strong class="marker">説明:</strong>
+                            自分のスキル感を確認すべく作成しました。試行錯誤しながらも自分の思い描いていた作品ができ達成感と共に様々な課題を見つけることができました。</li>
+                    </ul>
+                </div>
+                <div class="portfolio-inner-item modal-open" data-modal-open="modal-4">
+                    <div class="portfolio-img">
+                        <img src="/images/myblog.png" alt="ブログの写真">
+                        <div class="portfolio-img-click">
+                            <i class="fas fa-plus-square portfolio-img-click"></i>
+                        </div>
+                    </div>
+                    <ul class="portfolio-item-text">
+                        <li class="portfolio-item-text-title"><strong class="marker">タイトル:</strong> 旅のブログ</li>
+                        <li class="portfolio-item-text-time"><strong class="marker">使用言語:</strong> WordPress, PHP</li>
+                        <li class="portfolio-item-text-explanation"><strong class="marker">説明:</strong>
+                            Webで開催されている30daysトライアルという企画に参加しロードマップに沿って作成しました。一度、サーバーサイドの言語に触れてみたかったので貴重な経験ができました。</li>
+                    </ul>
+                </div>
+                <div class="portfolio-inner-item modal-open" data-modal-open="modal-5">
+                    <div class="portfolio-img">
+                        <img src="/images/coding.png" alt="コーディングの写真">
+                        <div class="portfolio-img-click">
+                            <i class="fas fa-plus-square portfolio-img-click"></i>
+                        </div>
+                    </div>
+                    <ul class="portfolio-item-text">
+                        <li class="portfolio-item-text-title"><strong class="marker">タイトル:</strong> 模写コーディング</li>
+                        <li class="portfolio-item-text-time"><strong class="marker">使用言語:</strong> HTML, CSS, jQuery
+                        </li>
+                        <li class="portfolio-item-text-explanation"><strong class="marker">説明:</strong>
+                            スクールに通っていた頃に課題で作成したものです。web制作に手をつけてから日が浅い頃に作成したのでかなり時間がかかってしまい印象に残っています。</li>
+                    </ul>
+                </div>
+                <div class="portfolio-inner-item">
+                    <p class="portfolio-board-text">
+                        他にもGoogleドライブに制作物をまとめています
+                    </p>
+                    <button type="button" class="btn google-drive-btn">
+                        <a href="https://drive.google.com/drive/folders/1V57QoQKVAa1xxoljmIrP36jHsEmgUK36?usp=sharing">
+                            <i class="fa fa-chevron-right"></i> 制作一覧へ
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 背景画像スクロール -->
+        <div class="fixed-bg bg02">
+        </div>
+
+        <!-- Contact -->
+        <section class="contact inner anchor" id="contact">
+            <div class="title-text-side">
+                <h2 class="section-title">Contact</h2>
+                <h4 class="section-title-sub">お問い合わせはこちら</h4>
+            </div>
+            <!-- form -->
+            <form
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeTLqcBYv3GMs5aZjBq5q9aGntcEO5M2P5NuUsF_0OBox9gww/formResponse"
+                method="post" class="contact-form" name="myForm" target="dummyIframe" id="formWrapper">
+                <div class="required-item">
+                    <div class="contact-name">
+                        <label for="name" class="required">必須</label>
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="entry.1367261961" placeholder="山田太郎">
+                    </div>
+                    <div class="contact-mail">
+                        <label for="name" class="required">必須</label>
+                        <label for="mail">メールアドレス</label>
+                        <input type="email" id="mail" name="entry.1760244752" placeholder="example.com">
+                    </div>
+                </div>
+                <div class="contact-msg">
+                    <label for="msg">お問い合わせ内容</label>
+                    <textarea id="meg" name="entry.391727774" placeholder="お気軽にお問い合わせください"></textarea>
+                </div>
+                <button class="btn contact-btn" type="submit" name="button" value="送信" onclick="sendGform()">送
+                    信</button>
+            </form>
+
+            <!-- 送信確認のメッセージ表示 -->
+            <iframe name="dummyIframe" style="display:none;"></iframe>
+            <div id="thxMessage">お問い合わせありがとうございました。</div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <small class="footer-logo">©︎ 2020 Kanno Takamichi</small>
+    </footer>
+
+    <!-- スクロールトップ -->
+    <div id="pagetop" class="scroll-top">
+        <a href="#">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+// 共通部分
+
+// section-title
+.section-title {
+  font-size: 3rem;
+  font-family: $font-main;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: $color-text-black;
+  position: relative;
+  line-height: 1.4;
+  padding: 0.25em 1em;
+  display: inline-block;
+  top: 0;
+  margin-bottom: 20px;
+  @include sp {
+    margin-bottom: 40px;
+  }
+}
+
+.section-title:before, .section-title:after { 
+  position: absolute;
+  top: 0;
+  content:'';
+  width: 15px;
+  height: 100%;
+  display: inline-block;
+}
+.section-title:before {
+  border-left: solid 2px #333;
+  border-top: solid 2px #333;
+  border-bottom: solid 2px #333;
+  left: 0;
+}
+.section-title:after {
+  content: '';
+  border-top: solid 2px #333;
+  border-right: solid 2px #333;
+  border-bottom: solid 2px #333;
+  right: 0;
+}
+
+// section-title-sub装飾
+.section-title-sub {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: $font-main;
+  color: $color-text-black;
+  position: relative;
+  line-height: 1.4;
+  padding: 0.25em 1em;
+  display: inline-block;
+  top: 0;
+  letter-spacing: 1.5px;
+  @include sp {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+}
+
+.section-title-sub:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: 1px solid #333;
+  left: 0;
+  background-color: #333;
+  top: 12.5px;
+  @include sp {
+    width: 15px;
+    height: 15px;
+    top: 10px;
+  }
+}
+
+// ボタン基本設定
+.btn {
+  font-size: 3rem;
+  font-family: $font-main;
+  font-weight: bold;
+  color: #fff;
+  background: #00aaff;
+  border-radius: 5px;
+  border: 0;
+  letter-spacing: 1.2px;
+  padding: .25em .5em;
+  transition: .5s;
+  cursor: pointer;
+  a {
+    color: #fff;
+  }
+  &:hover {
+  background: #005eff;
+  }
+}

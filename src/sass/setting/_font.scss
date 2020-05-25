@@ -1,0 +1,31 @@
+// フォントファミリー
+$font-main: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','Yu Gothic','メイリオ', 'Meiryo','ＭＳ Ｐゴシック','MS PGothic','Regular';
+
+
+// フォントサイズ 日本語
+$font-ja-big: 30px;
+$font-ja-medium: 28px;
+$font-ja-sub: 20px;
+$font-ja-base: 16px;
+$font-ja-mini: 12px;
+
+// フォントサイズ 英語
+$font-en-big: 38px;
+$font-en-medium: 36px;
+$font-en-sub: 20px;
+$font-en-base: 18px;
+$font-en-mini: 14px;
+
+// ベースフォントサイズ
+html {
+  font-size: 62.5%; //ルートのフォントサイズを10pxに指定
+}
+
+body {
+  font-size: 1.6em; //何も指定しなければ16pxになるように設定
+}
+
+@mixin font-base-black {
+  font-family: $font-main;
+  color: $color-text-black;
+}

@@ -1,0 +1,35 @@
+// 実用 効用
+.marker {
+  background: linear-gradient(transparent 60%, #ff0 60%);
+  font-weight: 600;
+}
+
+// スクロールすると動く背景
+.fixed-bg {
+  height: 50vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+// 背景画像1
+.bg01 {
+  background-image: url(img/scroll1.jpg);
+}
+
+// 背景画像2
+.bg02 {
+  background-image: url(img/scroll2.jpg);
+}
+
+//タイトル横並びの為
+.title-text-side {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  @include sp {
+    display: block;
+    text-align: center;
+  }
+}
