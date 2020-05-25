@@ -133,9 +133,9 @@ window.onload = function () {
 
 // top-view背景画像切り替え
 myImage = new Array(
-  "dist/images/top-view1.jpg",
-  "dist/images/top-view2.jpg",
-  "dist/images/top-view3.jpg",
+  "./dist/images/top-view1.jpg",
+  "./dist/images/top-view2.jpg",
+  "./dist/images/top-view3.jpg",
 );
 myNowCnt = -1;
 // 現在表示している配列番号
