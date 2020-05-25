@@ -133,9 +133,9 @@ window.onload = function () {
 
 // top-view背景画像切り替え
 myImage = new Array(
-  "images/top-view1.jpg",
-  "images/top-view2.jpg",
-  "images/top-view3.jpg",
+  "https://github.com/takamiti-ta/portfolio3/blob/master/dist/images/top-view1.jpg?raw=true",
+  "https://github.com/takamiti-ta/portfolio3/blob/master/dist/images/top-view2.jpg?raw=true",
+  "https://github.com/takamiti-ta/portfolio3/blob/master/dist/images/top-view3.jpg?raw=true"
 );
 myNowCnt = -1;
 // 現在表示している配列番号
