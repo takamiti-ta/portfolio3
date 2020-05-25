@@ -88,6 +88,9 @@
   padding: .25em .5em;
   transition: .5s;
   cursor: pointer;
+  @include sp {
+    font-size: 2rem;
+  }
   a {
     color: #fff;
   }
