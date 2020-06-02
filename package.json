@@ -1,6 +1,6 @@
 {
-  "name": "portfolio3webpack",
-  "version": "1.0.0",
+  "name": "pwd",
+  "version": "pwd",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
@@ -17,5 +17,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack --watch --config webpack.config.js"
-  }
+  },
+  "repository": "https://github.com/takamiti-ta/portfolio3.git",
+  "author": "taka <migepon@gmail.com>"
 }
