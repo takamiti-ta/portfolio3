@@ -69,14 +69,48 @@
   }
 }
 
+// .portfolio-link {
+//   background-color: #00bff8;
+//   border-bottom: 3px solid #0090bb;
+//   color: #fff;
+//   font-size: 1.2rem;
+//   border-radius: 5px;
+//   padding: .2em .5em;
+//   margin-left: 5px;
+//   transition: all .3s;
+// }
+
+// .portfolio-link:hover {
+//   margin-top: 5px;
+//   background-color: #00bff8;
+//   border-bottom: 2px solid #0090bb;
+// }
+
 .portfolio-link {
-  background-color: #00aaff;
-  color: #fff;
   font-size: 1.2rem;
+  font-family: $font-main;
+  color: #fff;
+  background: #00bff8;
   border-radius: 5px;
+  letter-spacing: 1.2px;
   padding: .2em .5em;
+  transition: .5s;
   margin-left: 5px;
+  cursor: pointer;
+  border-bottom: 3px solid #0090bb;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  @include sp {
+    margin-left: 0;
+  }
+  a {
+    color: #fff;
+  }
+  &:hover {
+  background: #00bff8;
+  border-bottom: 1px solid #0090bb;
+  }
 }
+
 
 .portfolio-board-text {
   font-size: 3rem;

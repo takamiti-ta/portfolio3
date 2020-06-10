@@ -40,3 +40,10 @@
         display: none;
     }
 }
+// brのsp表示
+.pc-none {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
